@@ -25,7 +25,7 @@ else
     author_name="$3"
 fi
 
-if [ ! -d "$review" ] || [ -d "$complet" ]; then
+if [ ! -d "$review" ] || [ ! -d "$complet" ]; then
     echo -e "Usage:\n\t$(basename "$0") <review_dir_path> <complete_dir_path> <author_name>\n"
     echo -e "FYI: You can also avoid all this and fill in the first variables in the script"
     exit 1
